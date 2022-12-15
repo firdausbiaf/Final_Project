@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Storage;
 use PDF;
 use Illuminate\Support\Collection;
 
+
 class BarangController extends Controller
 {
     /**
@@ -57,6 +58,8 @@ class BarangController extends Controller
             'harga' => $request->harga,
             'stok' => $request->stok,
         ]);
+
+        
 
 
         return redirect()->route('barang.index')
